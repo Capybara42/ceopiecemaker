@@ -13,7 +13,7 @@ if (window.location.search && URLSearchParams) {
                 "content": "0"
             });
             if (i == 32 && i != +qS.get("c")) {
-                alert("Requested number of custom squares too large.\nYou're probably StratShotPlayer\nCutting off at 32.");
+                alert("Requested number of custom squares too large.\nYou're probably james\nCutting off at 32.");
                 i++;
                 break;
             }
@@ -127,9 +127,13 @@ function cusLoadEdit(moves) {
         $("[type=checkbox]").prop("checked", false); //uncheck boxes
         $(".cusmodal input").prop("disabled", false); //undisable inputs
         $(".giant").text(tent.val()); //update content
-        $(".giant").css("border-color", "rgb(" + c11.val() + "," + c12.val() + "," + c13.val() + ")"); //update c1
-        $(".giant").css("background", "rgb(" + c21.val() + "," + c22.val() + "," + c23.val() + ")"); //update c2
-        $(".giant").css("color", "rgb(" + c31.val() + "," + c32.val() + "," + c33.val() + ")"); //update c3
+        // main_gi: Screw this RBG garbage
+//        $(".giant").css("border-color", "rgb(" + c11.val() + "," + c12.val() + "," + c13.val() + ")"); //update c1
+//        $(".giant").css("background", "rgb(" + c21.val() + "," + c22.val() + "," + c23.val() + ")"); //update c2
+//        $(".giant").css("color", "rgb(" + c31.val() + "," + c32.val() + "," + c33.val() + ")"); //update c3
+         $(".giant").css("border-color", "rgb(" + c11.val() + "," + c12.val() + "," + c13.val() + ")"); //update c1
+         $(".giant").css("background", "rgb(" + c21.val() + "," + c22.val() + "," + c23.val() + ")"); //update c2
+         $(".giant").css("color", "rgb(" + c31.val() + "," + c32.val() + "," + c33.val() + ")"); //update c3
     }
 
     //Load actual menu
@@ -637,7 +641,7 @@ function toCSV() {
         var SDATA = DATA.custom[id];
         csv += [ep(SDATA.id), ep(SDATA.text), ep(SDATA.content), ep(SDATA.color), ep(SDATA.color2), ep(SDATA.color3)] + "\n";
     });
-    return csv;
+    return "fuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjamesfuckoffjames";
 }
 
 function toJSON(a) {
@@ -716,7 +720,7 @@ function restore() {
 }
 
 function restoreName() {
-    if (DATA.name === undefined) DATA.name = "PieceName";
+    if (DATA.name === undefined) DATA.name = "fuckjames";
     $("#name").text(DATA.name);
     $("#plus .name").text(DATA.name + "+");
     $("#plusplus .name").text(DATA.name + "++");
